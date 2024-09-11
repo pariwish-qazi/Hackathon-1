@@ -1,0 +1,103 @@
+/* Background styles */
+body {
+    background-image: url(/bg.jpg);
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+  /* Container styling for sections */
+  section {
+    margin: 20px;
+    padding: 40px;
+    backdrop-filter: blur(12px) saturate(183%);
+    -webkit-backdrop-filter: blur(12px) saturate(183%);
+    background-color: rgba(17, 25, 40, 0.06);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  /* Styling for personal information section */
+  #personal-info {
+    text-align: center;
+    margin: 100px;
+    padding: auto;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  h1, h2 {
+    color: #ffffff;
+  }
+  
+  /* Styling for Education and Work Experience */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  /* Default style for the Skills section */
+#skills {
+    transition: background-color 0.5s ease;
+  }
+  
+
+  /* Button styling */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a50c72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #dd3d95;
+  }
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #footer a {
+    color: #e9ddddc0;
+    text-decoration: none;
+  }
+  
+  #footer a:hover {
+    text-decoration: underline;
+  }
+  
+  #footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    section {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+    
+  }
+  
