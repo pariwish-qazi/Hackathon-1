@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: "bg.jpg";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: #eb5ebc88;
+    padding: 80px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(82, 7, 204, 0.37);
+    width: 600px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Sofia", sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(99, 13, 179);
+}
+
+h2 {
+    text-align: center;
+    color: #f5a5e8;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #190574;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 30px;
+    width: 30%;
+    padding: 15px;
+    position: relative;
+    background-color: #393cf5;
+    font-size: 20px;
+    color: rgb(138, 190, 238);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0e0377;
+}
+
+/* Resume Section */
+#resume-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #898fb3;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
