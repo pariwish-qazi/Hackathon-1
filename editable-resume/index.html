@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder by Bisma Qazi</title>
+    <title>Editable Resume Builder by Bisma Qazi</title>
     <link rel="stylesheet" href="/Hackathon-1/dynamic-resume-builder/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body style="background-image: url(/Hackathon-1/bg.jpg);">
     <div class="container">
-        <h1>Dynamic Resume Builder by Bisma Qazi</h1>
+        <h1>Editable Resume Builder by Bisma Qazi</h1>
         
         <!-- Form Section -->
         <form id="resume-form">
@@ -48,7 +48,9 @@
         </form>
         
         <!-- Resume Display Section -->
-        <div id="resume-section" class="hidden">
+         <!-- Added contenteditable attribute to make it editable-->
+         
+        <div id="resume-section" class="hidden" contenteditable="true">
             <h2 id="resume-name"></h2>
             <p id="resume-email"></p>
             <p id="resume-contact"></p>

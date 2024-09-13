@@ -41,11 +41,12 @@ namespace Resumebuilder{
         const skills = skillsInput.value.split(',');
     
         // Update Resume Section
+        // Added span tag to make it editable
         resumeName.textContent = name;
         resumeEmail.textContent = email;
-        resumeContact.textContent = `${contact}`;
-        resumeEducation.textContent = `${degree}, ${college}`;
-        resumeWork.textContent = `${jobTitle} at ${company} since ${experience}`;
+        resumeContact.textContent = `<span contenteditable="true">${contact}</span>`;
+        resumeEducation.textContent = `<span contenteditable="true">${degree}, ${college}</span>`;
+        resumeWork.textContent = `<span contenteditable="true">${jobTitle} at ${company} since ${experience}</span>`;
     
         // Clear skills list before updating
         resumeSkills.innerHTML = '';
