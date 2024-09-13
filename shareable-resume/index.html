@@ -4,45 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Resume Builder by Bisma Qazi</title>
-    <link rel="stylesheet" href="/Hackathon-1/editable-resume/style.css">
+    <title>Shareable Resume Builder by Bisma Qazi</title>
+    <link rel="stylesheet" href="/Hackathon-1/shareable-resume/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body style="background-image: url(/Hackathon-1/bg.jpg);">
     <div class="container">
-        <h1>Editable Resume Builder by Bisma Qazi</h1>
+        <h1>Shareable Resume Builder by Bisma Qazi</h1>
         
         <!-- Form Section -->
         <form id="resume-form">
             <h2>Personal Information</h2>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" required><br>
+            <input type="text" id="name" placeholder="Enter your full name" required><br>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" required><br>
+            <input type="email" id="email" placeholder="e.g john800@gmail.com"required><br>
             <label for="contact">Contact:</label>
-            <input type="text" id="contact" required><br>
+            <input type="text" id="contact" placeholder=" e.g 123456789"required><br>
             
             <h2>Education</h2>
             <label for="degree">Degree:</label>
-            <input type="text" id="degree" required><br>
+            <input type="text" id="degree" placeholder="e.g Intermediate" required><br>
 
             <label for="college">College/University:</label>
             <input type="text" id="college" required><br>
 
             <h2>Work Experience</h2>
             <label for="job-title">Job Title:</label>
-            <input type="text" id="job-title"><br>
+            <input type="text" id="job-title" placeholder="e.g Software engineer"><br>
 
             <label for="company">Company:</label>
-            <input type="text" id="company"><br>
+            <input type="text" id="company" placeholder="e.g ABC Company"><br>
 
             <label for="experience">Experience:</label>
-            <input type="text" id="experience"><br>
+            <input type="text" id="experience" placeholder="e.g 15 years"><br>
 
             <h2>Skills</h2>
             <label for="skills">Skills (comma separated):</label>
-            <input type="text" id="skills" required><br>
+            <input type="text" id="skills" placeholder="e.g team building, project management, html" required><br>
 
             <button type="submit" id="generate-resume-btn">Generate my Resume</button>
         </form>
@@ -64,8 +64,14 @@
             <h3>Skills</h3>
             <ul id="resume-skills"></ul>
         </div>
+         <!-- Shareable link and pdf download -->
+<div id="resume-actions" class="hidden">
+    <p>Shareable link: <a id="resume-link" href="#" target="_blank"></a></p>
+    <button id="copy-link-btn">Copy Link</button>
+    <button id="download-btn">Download as PDF</button>
+</div>
     </div>
     
-    <script src="/Hackathon-1/editable-resume/edit.js"></script>
+    <script src="/Hackathon-1/shareable-resume/share.js"></script>
 </body>
 </html>
